@@ -22,12 +22,16 @@
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
+            
         }
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 15px;
+            margin-left: 15px;
         }
 
         .logo {
@@ -186,6 +190,197 @@
                 font-size: 2rem;
             }
         }
+
+        /* Seção Programação */
+#programacao {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+#programacao h2,
+#programacao h3,
+#programacao h4,
+#programacao h5 {
+    color: white;
+    text-align: center;
+}
+
+.programming-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.programming-intro h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Grid de Linguagens */
+.languages-grid {
+    margin: 3rem 0;
+}
+
+.language-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.language-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+}
+
+.language-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.language-card h5 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.demand {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Caminhos de Carreira */
+.career-paths {
+    margin: 3rem 0;
+}
+
+.paths-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.path-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #f39c12;
+}
+
+.path-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.path-item ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.path-item li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Caminho de Aprendizado */
+.learning-path {
+    margin: 3rem 0;
+}
+
+.steps {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.step-number {
+    background: #f39c12;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.step-content h5 {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Comparação Salarial */
+.salary-comparison {
+    margin: 3rem 0;
+}
+
+.salary-levels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.salary-level {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.salary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+    margin: 1rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .language-cards,
+    .paths-container,
+    .salary-levels {
+        grid-template-columns: 1fr;
+    }
+    
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .step-content h5 {
+        text-align: center;
+    }
+}
         /* Seção de Motivação */
 .motivation {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
